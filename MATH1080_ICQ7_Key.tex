@@ -1,0 +1,168 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% In-class Quiz Template
+% LaTeX Template
+% By: Ryan Grove
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+%\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\cfoot{\thepage\ of \pageref{LastPage}}
+
+\usepackage{graphicx}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\normalfont \normalsize 
+\textsc{Jaman, Clemson University, MATH1080 - 1} \\ [25pt] % Your name, university, class
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge In-class Quiz \#7 \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Date:} % The due date
+
+\date{\normalsize February 29, 2016} % A custom date
+
+\begin{document}
+
+\maketitle % Print the title
+
+\begin{flushleft}
+\begin{tabular}{l l}
+Name: \rule{3.2in}{.01cm}  & {}%Table number: \rule{1in}{.01cm}\\
+\end{tabular}
+\end{flushleft}
+
+%----------------------------------------------------------------------------------------
+%	Directions
+%----------------------------------------------------------------------------------------
+
+\section*{\textbf{Directions:}}
+
+No calculator or notes may be used.  Read each question very carefully.  In order to receive full credit, you must:
+\begin{enumerate}
+\item Show legible and logical (relevant) justification which supports your final answer.
+\item Use complete and correct mathematical notation.
+\item Include proper units, if necessary.
+\item Give exact numerical values whenever possible.
+\item Follow the directions given for the problem.
+\end{enumerate}
+\newpage
+\begin{enumerate}
+\item Determine if the following sequences converges (and to which value) or diverges. 
+\begin{enumerate}
+\item (1 point)\hspace{4mm}\begin{large}$\left\{\frac{e^n}{\pi^n}\right\}$\end{large}\\
+\textbf{Solution:}
+\begin{eqnarray*}
+\lim\limits_{n\rightarrow\infty}\text{  }\frac{e^n}{\pi^n}=\lim\limits_{n\rightarrow\infty}\text{  }\left(\frac{e}{\pi}\right)^n=0\hspace{2mm}\text{Since here}\hspace{2mm} r=\frac{e}{\pi}<1
+\end{eqnarray*}
+The sequence converges.
+\item (2 points)\hspace{4mm} \begin{large}$\left\{\frac{n^2}{\ln n}\right\}$\end{large}\\
+\textbf{Solution:}\text{   } We consider a function $f(x)=\frac{x^2}{\ln x}$. Where $x>0$ and $x\in \mathbb{R}$\\\\ Then\hspace{3mm} $\lim\limits_{x\rightarrow\infty}\frac{x^2}{\ln x}$\hspace{3mm} which is of the form\hspace{3mm} $\frac{\infty}{\infty}$ \hspace{3mm} and we can apply L'Hospital rule
+$$\lim\limits_{x\rightarrow\infty}\frac{x^2}{\ln x}=\lim\limits_{x\rightarrow\infty}\frac{2x}{1/x}=\lim\limits_{x\rightarrow\infty}2x^2=\infty$$
+Therefore, we have $$\lim\limits_{x\rightarrow\infty}\frac{n^2}{\ln n}=\infty$$
+The sequence diverges.
+\item (2 points)\hspace{4mm} \begin{large}$\left\{\frac{n^3}{e^n}\right\}$\end{large}\\\\
+\textbf{Solution:}\\
+\text{   } We consider a function $f(x)=\frac{x^3}{e^x}$.\\\\ Then\hspace{3mm} $\lim\limits_{x\rightarrow\infty}\frac{x^3}{e^ x}$\hspace{3mm} which is of the form\hspace{3mm} $\frac{\infty}{\infty}$ \hspace{3mm} and we can apply L'Hospital rule
+$$\lim\limits_{x\rightarrow\infty}\frac{x^3}{e^ x}=\lim\limits_{x\rightarrow\infty}\frac{3x^2}{e^x}=\lim\limits_{x\rightarrow\infty}\frac{6x}{e^x}=\lim\limits_{x\rightarrow\infty}\frac{6}{e^x}=0$$
+Therefore, we have $$\lim\limits_{x\rightarrow\infty}\frac{n^3}{e^ n}=0$$
+The sequence converges.
+\end{enumerate}
+
+\newpage
+\item (2 points) Let \begin{large}$a_n=\frac{n^2}{2n+1}\hspace{2mm}\text{and}\hspace{2mm}b_n=\frac{-n^2}{2n-1}$\end{large}
+\begin{enumerate}
+\item Determine if \{ $a_n$ \} converges (and to which value) or diverges.\\
+\noindent\textbf{Solution:}\\
+\begin{eqnarray*}
+\lim\limits_{n \rightarrow \infty} \left(\frac{n^2}{2n+1}\right) &=& \lim\limits_{n \rightarrow \infty} \left(\frac{1}{\frac{2}{n}+\frac{1}{n}}\right)=\infty
+\end{eqnarray*}
+The sequence diverges.
+\vspace{.5in}
+\item Determine if \{ $b_n$ \} converges (and to which value) or diverges.
+
+\noindent\textbf{Solution:}\\
+\begin{eqnarray*}
+\lim\limits_{n \rightarrow \infty} \left(\frac{-n^2}{2n-1}\right) &=& \lim\limits_{n \rightarrow \infty} \left(\frac{-1}{\frac{2}{n}-\frac{1}{n}}\right)=-\infty
+\end{eqnarray*}
+The sequence diverges.
+\item Let \begin{large}$c_n=a_n+b_n$\end{large}. Determine if \{ $c_n$ \} converges (and to which value) or diverges.
+\noindent\textbf{Solution:}\\
+\begin{eqnarray*}
+\lim\limits_{n \rightarrow \infty} \left(\frac{n^2}{2n+1}-\frac{n^2}{2n-1}\right) &=& \lim\limits_{n \rightarrow \infty} \left(\frac{2n^3-n^2-2n^3-n^2}{4n^2+1}\right)\\
+&=& \lim\limits_{n \rightarrow \infty} \left(\frac{-2n^2}{4n^2+1}\right)\\
+&=& \lim\limits_{n \rightarrow \infty} \left(\frac{-2}{4+\frac{1}{n^2}}\right)\\
+&=& - \frac{1}{2}
+\end{eqnarray*}
+The sequence converges to $\boxed{-\frac{1}{2}}$.
+\end{enumerate}
+
+\newpage
+\item (2 points) Find the centroid of the region bounded by $y= \sin x$, $y= \cos x$, $x = 0$, $x = \frac{\pi}{4}$. \\
+
+\noindent\textbf{Solution:}\\
+\begin{eqnarray*}
+A &=& \int_0^{\pi/4} \left( \cos x - \sin x \right) \text{ } dx \\
+&=& \left[ \sin x + \cos x \right]0^{\pi/4} \\
+&=& \sqrt{2}-1
+\end{eqnarray*}
+
+\begin{eqnarray*}
+\bar{x} &=& A^{-1}\int_0^{\pi/4} x \left( \cos x - \sin x \right) \text{ } dx \\
+&=& A^{-1} \left[ x \left( \sin x + \cos x \right) + \cos x - \sin x \right]0^{\pi/4} \\
+&=& A^{-1} \left( \frac{\pi}{4} \sqrt{2} -1\right) \\
+&=& \frac{ \left( \frac{\pi}{4} \sqrt{2} -1\right)}{\sqrt{2}-1}
+\end{eqnarray*}
+
+\begin{eqnarray*}
+\bar{y} &=& A^{-1} \int_0^{\pi/4} \frac{1}{2} \left( \cos ^2 x - \sin ^2 x \right) \text{ } dx \\
+&=& \frac{1}{2A} \int_0^{\pi/4} \cos(2x) \text{ } dx  \\
+&=& \frac{1}{4A} \left[\sin(2x) \right]_0^{\pi/4} \\
+&=& \frac{1}{4A}(1-0)\\
+&=& \frac{1}{4(\sqrt{2}-1)} \\
+\end{eqnarray*}
+
+Thus, the centroid is \begin{large}$\boxed{(\bar{x},\bar{y})=\left(\frac{ \left( \frac{\pi}{4} \sqrt{2} -1\right)}{\sqrt{2}-1} ,\frac{1}{4(\sqrt{2}-1)}\right)}$\end{large}
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

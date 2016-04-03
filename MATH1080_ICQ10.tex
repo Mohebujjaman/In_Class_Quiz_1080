@@ -1,0 +1,103 @@
+
+
+\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\newcommand{\ds}{\displaystyle}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+%\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\cfoot{\thepage\ of \pageref{LastPage}}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\normalfont \normalsize 
+\textsc{Jaman, Clemson University, MATH1080 - 1} \\ [25pt] % Your name, university, class
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge In-class Quiz \#10 (Total Points 10) \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Date:} % The due date
+
+\date{\normalsize April 4, 2016} % A custom date
+
+\begin{document}
+
+\maketitle % Print the title
+
+\begin{flushleft}
+\begin{tabular}{l l}
+Name: \rule{3.2in}{.01cm}  & {}%Table number: \rule{1in}{.01cm}\\
+\end{tabular}
+\end{flushleft}
+
+%----------------------------------------------------------------------------------------
+%	Directions
+%----------------------------------------------------------------------------------------
+
+\section*{\textbf{Directions:}}
+
+No calculator or notes may be used.  Read each question very carefully.  In order to receive full credit, you must:
+\begin{enumerate}
+\item Show legible and logical (relevant) justification which supports your final answer.
+\item Use complete and correct mathematical notation.
+\item Include proper units, if necessary.
+\item Give exact numerical values whenever possible.
+\item Follow the directions given for the problem.
+\end{enumerate}
+\vspace{.1in}
+
+\newpage
+
+\begin{enumerate}
+\item For the function $f(x)=\frac{x}{9+x^2}$
+\begin{enumerate}
+\item (2 points) Find a power series representation for the function.
+\vspace{5in}
+\item (1 point) What is the radius of convergence ?
+\end{enumerate}
+\newpage
+\item Consider the power series $\ds\sum_{n=0}^{\infty}\frac{(-3)^n(x-2)^n}{n^2+1}$
+\begin{enumerate} 
+\item (2 points)\hspace{4mm}Use a test from the Series Summary Sheet to determine the radius of convergence of the power series.
+\vspace{3.5in}
+\item (5 points)\hspace{4mm} Determine the interval of convergence for the power series. \\Hint:  Don't forget to
+check for convergence at the endpoints.
+\vspace{2.5in}
+\end{enumerate}
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
